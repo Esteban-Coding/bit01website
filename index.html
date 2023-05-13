@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CONTENIDO EN DESARROLLO</title>
+    <title>XBOX - Mando Inalámbrico para Xbox One</title>
+    <link href="/assets/style_index.css" rel="stylesheet" type="text/css">
+    <link href="/assets/icono_xbox.png" rel="shortcut icon" >
   </head>
   <body>
-    <div>CONTENIDO EN DESARROLLO</div>
+    <header id="header" class="header">
+        <section class="nav_bar">
+            <img src="assets/icono_xbox.png" class="icono_xbox" alt="icono xbox">
+            <nav>
+                <ul id="lista_menu">
+                    <li><a href="#">Comunidad</a> </li>
+                    <li><a href="#">Game Pass</a> </li>
+                    <li><a href="#">Accesorios</a> </li>
+                    <li><a href="#">Juegos</a> </li>
+                    <li><a href="#">Soporte técnico</a> </li>
+                    <li><a href="#">Carrito</a> </li>
+                    <li><a href="#">Cuenta</a> </li>
+                </ul>
+            </nav> 
+            <img src="assets/icono_menu.png" class="icono_menu" onclick="alternar_menu()" alt="icono menu">
+        </section>
+    </header>
+
+    <main class="main">
+        <article class="article-1">
+            <h2>XBOX ONE <br>Series X/S</h2>
+            <h3>Mando Inalámbrico para Xbox One</h3>
+            <p>(Compatible/Generico) - Material Educativo</p>
+            <h4>$299.000 COP</h4>
+            <button type="button">COMPRAR AHORA</button>
+        </article>
+        <article class="article-2">
+            <img src="assets/xbox_one_control_blanco.png" class="img_control" alt="imagen control xbox one blanco">
+            <section class="caja_de_color"></section>
+            <section class="boton_agregar">
+                <img src="assets/agregar.png" alt="boton agregar al carrito">
+                <p><small>Agregar al Carrito</small></p>
+            </section>
+        </article>
+    </main>
+
+    <footer class="redes_sociales">
+        <img src="assets/fb.png" alt="icono facebook">
+        <img src="assets/ig.png" alt="icono instagram">
+        <img src="assets/tw.png" alt="icono twitter">
+    </footer>
+
+    <script>
+        var lista_menu = document.getElementById("lista_menu");
+        lista_menu.style.maxHeight = "0px";
+        function alternar_menu() {
+            if (lista_menu.style.maxHeight == "0px") {
+                lista_menu.style.maxHeight = "130px"
+            } else {
+                lista_menu.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    
   </body>
 </html>
