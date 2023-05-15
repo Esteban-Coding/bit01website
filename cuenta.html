@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuenta</title>
+    <link href="/assets/style_dark.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/style_menu_dark.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/style_cuenta.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/icono_xbox.png" rel="shortcut icon" />
+    <link
+      href="/assets/style_footer_dark.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- MENU -->
+    <header id="header" class="header">
+      <section class="section_menu">
+        <a href="index.html"
+          ><i id="icono_xbox" class="fa-brands fa-xbox" alt="icono xbox"></i
+        ></a>
+        <nav class="nav_lista_menu">
+          <ul id="interactive_lista_menu">
+            <li><a href="#">Comunidad</a></li>
+            <li><a href="#">Game Pass</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Juegos</a></li>
+            <li><a href="#">Soporte técnico</a></li>
+            <li><a href="#">Carrito</a></li>
+            <li><a href="cuenta.html">Cuenta</a></li>
+          </ul>
+        </nav>
+        <i
+          id="icono_menu"
+          class="fa-solid fa-bars"
+          onclick="alternar_menu()"
+          alt="icono menu"
+        ></i>
+      </section>
+    </header>
+    <script>
+      var interactive_lista_menu = document.getElementById(
+        "interactive_lista_menu"
+      );
+      interactive_lista_menu.style.maxHeight = "0px";
+      function alternar_menu() {
+        if (interactive_lista_menu.style.maxHeight == "0px") {
+          interactive_lista_menu.style.maxHeight = "130px";
+        } else {
+          interactive_lista_menu.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main">
+      <section class="perfil">
+        <article class="article_icono_perfil">
+          <img
+            id="icono_perfil"
+            src="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcS9jr0n8i7LY1tL3U7AiafZEVD9BSEui6UEEWdjuTnP2d8f1ivvfu0xbNVRMn6akh&format=jpg"
+            class="icono_perfil"
+            alt="icono_perfil"
+          />
+        </article>
+        <article class="article_datos_perfil">
+          <article class="monedas">
+            <i
+              id="icono_monedas"
+              class="fa-brands fa-bitcoin"
+              alt="icono monedas"
+            ></i>
+            <p class="cantidad_monedas">8.555</p>
+          </article>
+          <h1>Xtebandido</h1>
+          <p>Esteban Camacho</p>
+          <p>Último visto hace 14 años: Halo 2</p>
+          <article class="lista_info">
+            <dl>
+              <dt>Seguidores</dt>
+              <dd>100M</dd>
+            </dl>
+            <dl>
+              <dt>Amigos</dt>
+              <dd>2</dd>
+            </dl>
+            <dl>
+              <dt>Ubicación</dt>
+              <dd>Colombia</dd>
+            </dl>
+          </article>
+        </article>
+      </section>
+      <!-- SECTION LOGROS -->
+      <section class="panel">
+        <p id="p_logros">Logros</p>
+        <article class="logros">
+          <div class="info_logros">
+            <img
+              id="icono_perfil_logros"
+              src="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcS9jr0n8i7LY1tL3U7AiafZEVD9BSEui6UEEWdjuTnP2d8f1ivvfu0xbNVRMn6akh&format=jpg"
+              class="icono_perfil"
+              alt="icono_perfil_logros"
+            />
+            <div class="info">
+              <p id="name">Xtebandido</p>
+              <p>desbloqueó un logro</p>
+            </div>
+            <div class="date">
+              <p>26/12/2014</p>
+            </div>
+          </div>
+          <div class="img_logros">
+            <div class="img_logros_info">
+              <i
+                id="icono_monedas_logros"
+                class="fa-brands fa-bitcoin"
+                alt="icono monedas"
+              ></i>
+              <p>50 - Maestro del LTC</p>
+            </div>
+          </div>
+          <div class="info_interacciones">
+            <i
+              id="icono_corazon"
+              class="fa-solid fa-heart"
+              alt="icono corazon"
+            ></i>
+            <i
+              id="icono_comentarios"
+              class="fa-solid fa-message"
+              alt="icono comentarios"
+            ></i>
+            <i
+              id="icono_compartir"
+              class="fa-solid fa-share"
+              alt="icono compartir"
+            ></i>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!-- SECCION AMIGOS -->
+    <aside class="aside">
+      <article class="amigos">
+        <i
+          id="icono_amigos"
+          class="fa-solid fa-user-group"
+          alt="icono amigos"
+        ></i>
+        <p class="text_amigos">Amigos</p>
+        <i
+          id="icono_buscar"
+          class="fa-solid fa-magnifying-glass"
+          alt="icono buscar"
+        ></i>
+      </article>
+      <article class="lista_amigos">
+        <article class="amigo_en_linea">
+          <img
+            id="icono_perfil_amigos"
+            src="https://i.pinimg.com/originals/49/94/ee/4994eeefce46a28218f5672dda941781.jpg"
+            class="icono_perfil_amigos"
+            alt="icono_perfil"
+            height="75"
+            width="75"
+          />
+          <h2>John 117</h2>
+          <p>Halo: The Fall of Reach</p>
+        </article>
+        <article class="amigo_desconectado">
+          <img
+            id="icono_perfil_amigos"
+            src="https://i.pinimg.com/originals/c9/fe/a6/c9fea683c8ef7f910510580b6599015a.jpg"
+            class="icono_perfil_amigos"
+            alt="icono_perfil"
+            height="75"
+            width="75"
+          />
+          <h2>Cortana</h2>
+          <p>Desconectado</p>
+        </article>
+      </article>
+    </aside>
+    <!-- FOOTER -->
+    <footer class="redes_sociales">
+      <a href="https://www.facebook.com/XboxColombia" target="_blank"
+        ><i class="fa-brands fa-facebook-f"></i
+      ></a>
+      <a href="https://www.instagram.com/xboxcolombia" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href="https://twitter.com/XboxColombia" target="_blank"
+        ><i class="fa-brands fa-twitter"></i
+      ></a>
+    </footer>
+  </body>
+</html>

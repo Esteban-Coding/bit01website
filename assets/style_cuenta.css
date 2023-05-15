@@ -1,0 +1,278 @@
+.main {
+    width: 65%;
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 5%;
+    padding: 40px 0 50px 0;
+}
+
+.perfil {
+    display: flex;
+    position: relative;
+    background: green;
+    padding: 40px 0 50px 0;
+}
+
+.article_icono_perfil {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+#icono_perfil {
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 50%;
+}
+
+.article_datos_perfil {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.monedas {
+    display: block;
+}
+
+#icono_monedas, .cantidad_monedas {
+    display: inline;
+}
+
+.article_datos_perfil h1 {
+    font-size: 34px;
+    margin-top: 30px;
+}
+
+.article_datos_perfil p {
+    margin-top: 30px;
+}
+
+.lista_info {
+    margin-top: 30px;
+    display: inline-flex;
+}
+
+.article_datos_perfil dl {
+    margin-right: 100px;
+    font-size: 16px;
+}
+
+.article_datos_perfil dd {
+    margin-top: 10px;
+    font-size: 26px;
+}
+
+.aside {
+    width: 25%;
+    margin-left: 2%;
+    position: fixed;
+    display: inline-block;
+    color: #fff;
+}
+
+.amigos {
+    padding: 10px;
+    border-width: 0px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: green;
+    display: block;
+}
+
+#icono_amigos, .text_amigos {
+    display: inline;
+}
+
+#icono_buscar {
+    float: right;
+}
+
+.lista_amigos {
+    padding-top: 5%;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.amigo_en_linea img {
+    border: 5px solid green;
+}
+
+.amigo_desconectado img {
+    border: 5px solid black;
+}
+
+.lista_amigos img {
+    display: inline;
+    border-radius: 50%;
+}
+
+.lista_amigos h2 {
+    padding: 10px;
+    position: absolute;
+    display: inline;
+}
+
+.lista_amigos p {
+    padding-top: 40px;
+    padding-left: 10px;
+    position: absolute;
+    display: inline;
+}
+
+.panel {
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.panel #p_logros {
+    padding-bottom: 40px;
+}
+
+.panel .logros .info_logros .info #name {
+    font-weight: bold;
+}
+
+.panel .logros .info_logros {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    align-items: center;
+    background: #222;
+
+}
+
+.panel .logros #icono_perfil_logros {
+    display: inline;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 2%;
+}
+
+.panel .logros .info_logros .info {
+    margin-left: 2%;
+}
+
+.panel .logros .info_logros .date {
+    position: absolute;
+    right: 31%;
+}
+
+.panel .logros .img_logros {
+    background-image: url("/assets/logro.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.panel .logros .img_logros p {
+    display: inline;
+}
+
+.panel .logros .img_logros .img_logros_info {
+    width: 80%;
+    padding-top: 35%;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    font-size: 1.9vw;
+    font-weight: bold;
+}
+
+.panel .logros .info_interacciones {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    align-items: center;
+    background: #222;
+}
+
+.panel .logros .info_interacciones i {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1200px) {
+    .perfil {
+        display: block;
+        position: relative;
+    }
+
+    .article_icono_perfil {  
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .article_datos_perfil {
+        width: 450px;
+        margin-left: auto;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width:870px) {
+    html {
+        width: 95%;
+    }
+
+    .header {
+        padding-right: 0px;
+    }
+
+    .main {
+        width: 95%;
+    }
+
+    .article_icono_perfil {  
+        width: 50%;
+    }
+
+    #icono_perfil {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .article_datos_perfil {
+        width: 250px;
+    }
+
+    .article_datos_perfil dd{
+        margin-top: 0px;
+    }
+
+    .article_datos_perfil dt{
+        margin-top: 30px;
+    }
+
+    .article_datos_perfil dl {
+        margin-right: 0px;
+    }
+    
+    .lista_info {
+        display: block;
+    }
+
+    .panel .logros .info_logros .date {
+        right: 7%;
+    }
+
+    .panel .logros .img_logros .img_logros_info {
+        font-size: 2.6vw;
+    }
+
+    .aside {
+        position: relative;
+        width: 90%;
+        margin-top: 0;
+        margin-left: 5%;
+        margin-bottom: 50px;
+    }
+}

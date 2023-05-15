@@ -1,0 +1,19 @@
+.redes_sociales {
+    text-align: center;
+    text-decoration: none;
+}
+
+.redes_sociales a {
+    margin: 10px;
+}
+
+.redes_sociales i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.redes_sociales i:hover {
+    color: green;
+    transition: 0.2s;
+}

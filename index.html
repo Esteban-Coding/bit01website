@@ -1,65 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>XBOX - Mando Inalámbrico para Xbox One</title>
-    <link href="/assets/style_index.css" rel="stylesheet" type="text/css">
-    <link href="/assets/icono_xbox.png" rel="shortcut icon" >
+    <title>Mando Inalámbrico para Xbox One</title>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/style_menu.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/icono_xbox.png" rel="shortcut icon" />
+    <link href="/assets/style_index.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/style_footer.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <!-- MENU -->
     <header id="header" class="header">
-        <section class="nav_bar">
-            <img src="assets/icono_xbox.png" class="icono_xbox" alt="icono xbox">
-            <nav>
-                <ul id="lista_menu">
-                    <li><a href="#">Comunidad</a> </li>
-                    <li><a href="#">Game Pass</a> </li>
-                    <li><a href="#">Accesorios</a> </li>
-                    <li><a href="#">Juegos</a> </li>
-                    <li><a href="#">Soporte técnico</a> </li>
-                    <li><a href="#">Carrito</a> </li>
-                    <li><a href="#">Cuenta</a> </li>
-                </ul>
-            </nav> 
-            <img src="assets/icono_menu.png" class="icono_menu" onclick="alternar_menu()" alt="icono menu">
-        </section>
+      <section class="section_menu">
+        <a href="index.html"
+          ><i id="icono_xbox" class="fa-brands fa-xbox" alt="icono xbox"></i
+        ></a>
+        <nav class="nav_lista_menu">
+          <ul id="interactive_lista_menu">
+            <li><a href="#">Comunidad</a></li>
+            <li><a href="#">Game Pass</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Juegos</a></li>
+            <li><a href="#">Soporte técnico</a></li>
+            <li><a href="#">Carrito</a></li>
+            <li><a href="cuenta.html">Cuenta</a></li>
+          </ul>
+        </nav>
+        <i
+          id="icono_menu"
+          class="fa-solid fa-bars"
+          onclick="alternar_menu()"
+          alt="icono menu"
+        ></i>
+      </section>
     </header>
-
-    <main class="main">
-        <article class="article-1">
-            <h2>XBOX ONE <br>Series X/S</h2>
-            <h3>Mando Inalámbrico para Xbox One</h3>
-            <p>(Compatible/Generico) - Material Educativo</p>
-            <h4>$299.000 COP</h4>
-            <button type="button">COMPRAR AHORA</button>
-        </article>
-        <article class="article-2">
-            <img src="assets/xbox_one_control_blanco.png" class="img_control" alt="imagen control xbox one blanco">
-            <section class="caja_de_color"></section>
-            <section class="boton_agregar">
-                <img src="assets/agregar.png" alt="boton agregar al carrito">
-                <p><small>Agregar al Carrito</small></p>
-            </section>
-        </article>
-    </main>
-
-    <footer class="redes_sociales">
-        <img src="assets/fb.png" alt="icono facebook">
-        <img src="assets/ig.png" alt="icono instagram">
-        <img src="assets/tw.png" alt="icono twitter">
-    </footer>
-
     <script>
-        var lista_menu = document.getElementById("lista_menu");
-        lista_menu.style.maxHeight = "0px";
-        function alternar_menu() {
-            if (lista_menu.style.maxHeight == "0px") {
-                lista_menu.style.maxHeight = "130px"
-            } else {
-                lista_menu.style.maxHeight = "0px"
-            }
+      var interactive_lista_menu = document.getElementById(
+        "interactive_lista_menu"
+      );
+      interactive_lista_menu.style.maxHeight = "0px";
+      function alternar_menu() {
+        if (interactive_lista_menu.style.maxHeight == "0px") {
+          interactive_lista_menu.style.maxHeight = "130px";
+        } else {
+          interactive_lista_menu.style.maxHeight = "0px";
         }
+      }
     </script>
-    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main">
+      <article class="article-1">
+        <h2>XBOX ONE <br />Series X/S</h2>
+        <h3>Mando Inalámbrico para Xbox One</h3>
+        <p>(Compatible/Generico) - Material Educativo</p>
+        <h4>$299.000 COP</h4>
+        <button type="button">COMPRAR AHORA</button>
+      </article>
+      <article class="article-2">
+        <img
+          src="assets/xbox_one_control_blanco.png"
+          class="img_control"
+          alt="imagen control xbox one blanco"
+        />
+        <section class="caja_de_color"></section>
+        <section class="boton_agregar">
+          <img src="assets/agregar.png" alt="boton agregar al carrito" />
+          <p><small>Agregar al Carrito</small></p>
+        </section>
+      </article>
+    </main>
+    <!-- FOOTER -->
+    <footer class="redes_sociales">
+      <a href="https://www.facebook.com/XboxColombia" target="_blank"
+        ><i class="fa-brands fa-facebook-f" alt="facebook xbox"></i
+      ></a>
+      <a href="https://www.instagram.com/xboxcolombia" target="_blank"
+        ><i class="fa-brands fa-instagram" alt="instagram xbox"></i
+      ></a>
+      <a href="https://twitter.com/XboxColombia" target="_blank"
+        ><i class="fa-brands fa-twitter" alt="twitter xbox"></i
+      ></a>
+    </footer>
   </body>
 </html>
