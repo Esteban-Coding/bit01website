@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cuenta</title>
-    <link href="/assets/style_dark.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/style_menu_dark.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/style_cuenta.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/icono_xbox.png" rel="shortcut icon" />
+    <!-- LINK-MEDIA -->
+    <link href="/assets/media/icono_xbox.png" rel="shortcut icon" />
+    <!-- LINK-CSS -->
+    <link href="/assets/css/style_dark.css" rel="stylesheet" type="text/css" />
     <link
-      href="/assets/style_footer_dark.css"
+      href="/assets/css/style_menu_dark.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/assets/css/style_account.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/assets/css/style_footer_dark.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -22,41 +32,49 @@
     />
   </head>
   <body>
-    <!-- MENU -->
-    <header id="header" class="header">
-      <section class="section_menu">
-        <a href="index.html"
-          ><i id="icono_xbox" class="fa-brands fa-xbox" alt="icono xbox"></i
-        ></a>
-        <nav class="nav_lista_menu">
-          <ul id="interactive_lista_menu">
-            <li><a href="#">Comunidad</a></li>
-            <li><a href="#">Game Pass</a></li>
-            <li><a href="#">Accesorios</a></li>
-            <li><a href="#">Juegos</a></li>
-            <li><a href="#">Soporte técnico</a></li>
-            <li><a href="#">Carrito</a></li>
-            <li><a href="cuenta.html">Cuenta</a></li>
-          </ul>
-        </nav>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="menu">
+        <!-- MAIN -->
+        <a href="../../index.html"
+          ><i id="icon_xbox" class="fa-brands fa-xbox" alt="icon xbox"
+            ><p>XBOX</p></i
+          ></a
+        >
+        <ul id="list_menu">
+          <a href="#">
+            <li><i class="fa-solid fa-gamepad"></i>Game Pass</li>
+          </a>
+          <a href="#">
+            <li><i class="fa-solid fa-store"></i>Tienda</li>
+          </a>
+          <a href="#">
+            <li><i class="fa-solid fa-cart-shopping"></i>Carrito</li>
+          </a>
+          <a class="account" href="account.html">
+            <li>Cuenta</li>
+          </a>
+        </ul>
+        <!-- TO RESPONSIVE -->
         <i
-          id="icono_menu"
+          id="icon_menu"
           class="fa-solid fa-bars"
-          onclick="alternar_menu()"
-          alt="icono menu"
+          alt="icon menu"
+          onclick="show_menu()"
         ></i>
-      </section>
+        <a href="account.html" class="icon_user"
+          ><i id="icon_user" class="fa-solid fa-circle-user" alt="icon user"></i
+        ></a>
+      </nav>
     </header>
     <script>
-      var interactive_lista_menu = document.getElementById(
-        "interactive_lista_menu"
-      );
-      interactive_lista_menu.style.maxHeight = "0px";
-      function alternar_menu() {
-        if (interactive_lista_menu.style.maxHeight == "0px") {
-          interactive_lista_menu.style.maxHeight = "130px";
+      let list_menu = document.getElementById("list_menu");
+      list_menu.style.maxHeight = "0px";
+      function show_menu() {
+        if (list_menu.style.maxHeight == "0px") {
+          list_menu.style.maxHeight = "300px";
         } else {
-          interactive_lista_menu.style.maxHeight = "0px";
+          list_menu.style.maxHeight = "0px";
         }
       }
     </script>
@@ -191,16 +209,19 @@
       </article>
     </aside>
     <!-- FOOTER -->
-    <footer class="redes_sociales">
-      <a href="https://www.facebook.com/XboxColombia" target="_blank"
-        ><i class="fa-brands fa-facebook-f"></i
-      ></a>
-      <a href="https://www.instagram.com/xboxcolombia" target="_blank"
-        ><i class="fa-brands fa-instagram"></i
-      ></a>
-      <a href="https://twitter.com/XboxColombia" target="_blank"
-        ><i class="fa-brands fa-twitter"></i
-      ></a>
+    <footer class="footer">
+      <div class="social_media">
+        <p>SIGUENOS</p>
+        <a href="https://www.facebook.com/XboxColombia" target="_blank"
+          ><i class="fa-brands fa-facebook-f" alt="facebook xbox"></i
+        ></a>
+        <a href="https://twitter.com/XboxColombia" target="_blank"
+          ><i class="fa-brands fa-twitter" alt="twitter xbox"></i
+        ></a>
+        <a href="https://www.instagram.com/xboxcolombia" target="_blank"
+          ><i class="fa-brands fa-instagram" alt="instagram xbox"></i
+        ></a>
+      </div>
     </footer>
   </body>
 </html>

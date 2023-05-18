@@ -1,0 +1,93 @@
+.header {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.25% 2.5%;
+    position: fixed;
+    list-style: none;
+    z-index: 100;
+    top: 0;
+    background: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+.menu #icons {
+    text-decoration: none;
+    color: #21fb04;
+    font-size: 2vw;
+}
+
+.menu ul a {
+    color: #000;
+    text-decoration: none; 
+}
+
+.menu ul a:hover {
+    color:#21fb04;
+    text-decoration: underline;
+}
+
+.menu ul a li {
+    display: inline;
+    padding: 1vh;
+}
+
+.menu ul a li i {
+    padding-right: 2vh;
+}
+
+.icon-responsive {
+    display: none;
+}
+
+@media screen and (max-width: 858px) {
+    .menu {
+        --color-text: #fff;
+    }
+    
+    .icon-responsive {
+        display: block;
+    }
+
+    .menu #icons {
+        font-size: 5vh;
+    }
+
+    .menu #disappear_in_responsive {
+        display:none
+    }
+
+    .menu ul {
+        width: 100%;
+        max-height: 0%;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: linear-gradient(#21fb04, #008000);
+        text-align: center;
+        font-size: 6vh;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .menu ul a {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .menu ul a:hover {
+        --color-text: #000;
+        text-decoration: none; 
+    }
+
+    .menu ul a li {
+        color: var(--color-text);
+    }
+}

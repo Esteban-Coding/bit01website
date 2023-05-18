@@ -4,58 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mando Inalámbrico para Xbox One</title>
-    <link href="/assets/style.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/style_menu.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/icono_xbox.png" rel="shortcut icon" />
-    <link href="/assets/style_index.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/style_footer.css" rel="stylesheet" type="text/css" />
+    <!-- LINK-MEDIA -->
+    <link href="/assets/media/icono_xbox.png" rel="shortcut icon" />
+    <!-- LINK-CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style_menu.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style_main.css" rel="stylesheet" type="text/css" />
     <link
+      href="/assets/css/style_footer.css"
       rel="stylesheet"
+      type="text/css"
+    />
+    <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- LINK-JS -->
+    <script src="assets/js/script_menu.js"></script>
   </head>
   <body>
-    <!-- MENU -->
-    <header id="header" class="header">
-      <section class="section_menu">
-        <a href="index.html"
-          ><i id="icono_xbox" class="fa-brands fa-xbox" alt="icono xbox"></i
-        ></a>
-        <nav class="nav_lista_menu">
-          <ul id="interactive_lista_menu">
-            <li><a href="#">Comunidad</a></li>
-            <li><a href="#">Game Pass</a></li>
-            <li><a href="#">Accesorios</a></li>
-            <li><a href="#">Juegos</a></li>
-            <li><a href="#">Soporte técnico</a></li>
-            <li><a href="#">Carrito</a></li>
-            <li><a href="cuenta.html">Cuenta</a></li>
-          </ul>
-        </nav>
-        <i
-          id="icono_menu"
-          class="fa-solid fa-bars"
-          onclick="alternar_menu()"
-          alt="icono menu"
-        ></i>
-      </section>
+    <!-- HEADER -->
+    <header class="header">
+      <!-- MENU -->
+      <nav class="menu">
+        <!-- ICON TO RESPONSIVE -->
+        <div id="icons" class="icon-responsive">
+          <i
+            id="icon_menu"
+            class="fa-solid fa-bars"
+            alt="icon menu"
+            onclick="show_menu()"
+          ></i>
+        </div>
+        <!-- ICON -->
+        <a href="index.html" id="icons">
+          <span><i class="fa-brands fa-xbox" alt="icon xbox"></i></span>
+          <!-- ID="TEXT" TO DISPLAY NONE IN RESPONSIVE -->
+          <span id="disappear_in_responsive">XBOX</span>
+        </a>
+        <!-- LIST -->
+        <ul id="list_menu">
+          <a href="index.html"
+            ><li><i class="fa-solid fa-gamepad"></i>Game Pass</li></a
+          >
+          <a href="index.html"
+            ><li><i class="fa-solid fa-store"></i>Tienda</li></a
+          >
+          <a href="index.html"
+            ><li><i class="fa-solid fa-cart-shopping"></i>Carrito</li></a
+          >
+          <a href="pages/es/account.html" id="disappear_in_responsive"
+            ><li>Cuenta</li></a
+          >
+        </ul>
+        <!-- ICON TO RESPONSIVE -->
+        <div class="icon-responsive">
+          <a id="icons" href="pages/es/account.html"
+            ><i class="fa-solid fa-circle-user" alt="icon user"></i>
+          </a>
+        </div>
+      </nav>
     </header>
-    <script>
-      var interactive_lista_menu = document.getElementById(
-        "interactive_lista_menu"
-      );
-      interactive_lista_menu.style.maxHeight = "0px";
-      function alternar_menu() {
-        if (interactive_lista_menu.style.maxHeight == "0px") {
-          interactive_lista_menu.style.maxHeight = "130px";
-        } else {
-          interactive_lista_menu.style.maxHeight = "0px";
-        }
-      }
-    </script>
     <!-- CONTENIDO PRINCIPAL -->
     <main class="main">
       <article class="article-1">
@@ -67,28 +79,31 @@
       </article>
       <article class="article-2">
         <img
-          src="assets/xbox_one_control_blanco.png"
+          src="assets/media/xbox_one_control_blanco.png"
           class="img_control"
           alt="imagen control xbox one blanco"
         />
         <section class="caja_de_color"></section>
         <section class="boton_agregar">
-          <img src="assets/agregar.png" alt="boton agregar al carrito" />
+          <img src="assets/media/agregar.png" alt="boton agregar al carrito" />
           <p><small>Agregar al Carrito</small></p>
         </section>
       </article>
     </main>
     <!-- FOOTER -->
-    <footer class="redes_sociales">
-      <a href="https://www.facebook.com/XboxColombia" target="_blank"
-        ><i class="fa-brands fa-facebook-f" alt="facebook xbox"></i
-      ></a>
-      <a href="https://www.instagram.com/xboxcolombia" target="_blank"
-        ><i class="fa-brands fa-instagram" alt="instagram xbox"></i
-      ></a>
-      <a href="https://twitter.com/XboxColombia" target="_blank"
-        ><i class="fa-brands fa-twitter" alt="twitter xbox"></i
-      ></a>
+    <footer class="footer">
+      <div class="social_media">
+        <p>SIGUENOS</p>
+        <a href="https://www.facebook.com/XboxColombia" target="_blank"
+          ><i class="fa-brands fa-facebook-f" alt="facebook xbox"></i
+        ></a>
+        <a href="https://twitter.com/XboxColombia" target="_blank"
+          ><i class="fa-brands fa-twitter" alt="twitter xbox"></i
+        ></a>
+        <a href="https://www.instagram.com/xboxcolombia" target="_blank"
+          ><i class="fa-brands fa-instagram" alt="instagram xbox"></i
+        ></a>
+      </div>
     </footer>
   </body>
 </html>

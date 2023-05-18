@@ -100,7 +100,7 @@ button:hover {
     cursor: pointer;
 }
 
-@media only screen and (max-width:550px) {
+@media only screen and (max-width:858px) {
     .main {
         flex-direction: column-reverse;
         margin: 50px 0;    

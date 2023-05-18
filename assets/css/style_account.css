@@ -164,8 +164,7 @@
 }
 
 .panel .logros .img_logros {
-    background-image: url("/assets/logro.png");
-
+    background-image: url("/assets/media/logro.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
