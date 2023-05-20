@@ -11,6 +11,12 @@
     <link href="/assets/css/style_menu.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/style_main.css" rel="stylesheet" type="text/css" />
     <link
+      href="/assets/css/style_support_modal.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
       href="/assets/css/style_footer.css"
       rel="stylesheet"
       type="text/css"
@@ -24,6 +30,7 @@
     />
     <!-- LINK-JS -->
     <script src="assets/js/script_menu.js"></script>
+    <script src="assets/js/script_support_modal.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -110,13 +117,16 @@
         ></a>
       </div>
       <div class="support">
-        <button id="btn_support_modal">
+        <button id="btn_open_support_modal">
           <i class="fa-solid fa-headset"><span>SOPORTE</span></i>
         </button>
       </div>
 
-      <dialog open>
+      <dialog id="support_modal">
         <form>
+          <button id="btn_close_support_modal">
+            <i class="fa-solid fa-x"></i>
+          </button>
           <h1>Bienvenid@ al soporte</h1>
 
           <i class="fa-solid fa-user"></i>
