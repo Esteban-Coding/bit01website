@@ -1,7 +1,23 @@
 .footer {
     display: flex;
     text-align: center;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.language a {
+    color: #21fb04;
+}
+
+.language i:hover {
+    color: #008000;
+    transition: 0.2s;
+}
+
+.language a i span {
+    padding-left: 10px;
 }
 
 .social_media {
@@ -11,13 +27,10 @@
 
 .social_media p {
     margin-bottom: 10px;
-    font-size: 18px;
-    font-family: 'MS Gothic';
-    font-weight: bold;
 }
 
 .social_media i {
-    font-size: 24px;
+    font-size: 4vh;
 }
 
 .social_media p, .social_media i {
@@ -31,4 +44,21 @@
 .social_media i:hover {
     color: #008000;
     transition: 0.2s;
+}
+
+.support button {
+    color: #21fb04;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+}
+
+.support i:hover {
+    color: #008000;
+    transition: 0.2s;
+}
+
+.support i span {
+    padding-left: 10px;
 }

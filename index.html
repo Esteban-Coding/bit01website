@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mando Inalámbrico para Xbox One</title>
+    <title>Xbox</title>
     <!-- LINK-MEDIA -->
     <link href="/assets/media/icono_xbox.png" rel="shortcut icon" />
     <!-- LINK-CSS -->
@@ -36,24 +36,24 @@
             id="icon_menu"
             class="fa-solid fa-bars"
             alt="icon menu"
-            onclick="show_menu()"
+            onclick="interactive_menu()"
           ></i>
         </div>
         <!-- ICON -->
         <a href="index.html" id="icons">
           <span><i class="fa-brands fa-xbox" alt="icon xbox"></i></span>
-          <!-- ID="TEXT" TO DISPLAY NONE IN RESPONSIVE -->
+          <!-- ID TO DISPLAY NONE IN RESPONSIVE -->
           <span id="disappear_in_responsive">XBOX</span>
         </a>
         <!-- LIST -->
         <ul id="list_menu">
-          <a href="index.html"
+          <a href="#"
             ><li><i class="fa-solid fa-gamepad"></i>Game Pass</li></a
           >
-          <a href="index.html"
+          <a href="#"
             ><li><i class="fa-solid fa-store"></i>Tienda</li></a
           >
-          <a href="index.html"
+          <a href="#"
             ><li><i class="fa-solid fa-cart-shopping"></i>Carrito</li></a
           >
           <a href="pages/es/account.html" id="disappear_in_responsive"
@@ -92,6 +92,11 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer">
+      <div class="language">
+        <a href="#"
+          ><i class="fa-solid fa-globe"><span>ESPAÑOL</span></i></a
+        >
+      </div>
       <div class="social_media">
         <p>SIGUENOS</p>
         <a href="https://www.facebook.com/XboxColombia" target="_blank"
@@ -104,6 +109,45 @@
           ><i class="fa-brands fa-instagram" alt="instagram xbox"></i
         ></a>
       </div>
+      <div class="support">
+        <button id="btn_support_modal">
+          <i class="fa-solid fa-headset"><span>SOPORTE</span></i>
+        </button>
+      </div>
+
+      <dialog open>
+        <form>
+          <h1>Bienvenid@ al soporte</h1>
+
+          <i class="fa-solid fa-user"></i>
+          <input
+            placeholder="Nombre completo"
+            type="text"
+            name="username"
+          /><br />
+
+          <i class="fa-solid fa-envelope"></i>
+          <input placeholder="Email" type="text" name="email" /><br />
+
+          <i class="fa-solid fa-globe"></i>
+          <select name="country">
+            <option value="0">Seleccione un país</option>
+            <option value="1">Colombia</option>
+            <option value="2">United States</option></select
+          ><br />
+
+          <i class="fa-solid fa-phone"></i>
+          <input placeholder="Celular" type="number" name="number" /><br />
+
+          <i class="fa-solid fa-caret-right"></i>
+          <input placeholder="Asunto" type="text" name="case" /><br />
+
+          <i class="fa-solid fa-pen"></i>
+          <input placeholder="Mensaje" type="text" name="message" /><br />
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </dialog>
     </footer>
   </body>
 </html>

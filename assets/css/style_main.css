@@ -36,7 +36,7 @@
     font-size: 20px;
 }
 
-button {
+.main .article-1 button {
     width: 140px;
     border: 0;
     padding: 12px 10px;
@@ -48,7 +48,7 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+.main .article-1 button:hover {
     display: flex;
     background: #21fb04;
     transition: 0.3s;

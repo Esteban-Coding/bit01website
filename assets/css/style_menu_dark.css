@@ -1,7 +1,8 @@
 .header {
-    width: 95%;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.25% 2.5%;
     position: fixed;
-    padding: 5px 2.5%;
     list-style: none;
     z-index: 100;
     top: 0;
@@ -10,118 +11,90 @@
 
 .menu {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    font-size: 1.5vw;
 }
 
-.menu a {
+.menu #icons {
     text-decoration: none;
-}
-
-.menu #icon_xbox, .menu #icon_menu, .menu #icon_user {
-    display: flex;
-    align-items: center;
-    font-size: 33px;
     color: #fff;
+    font-size: 2vw;
 }
 
-#icon_xbox:hover {
+.menu #icons:hover {
     color: #21fb04;
 }
 
-.menu #icon_xbox p {
-    display: inline;
-    padding: 5px;
-    font-size: 30px;
+.menu ul a {
+    color: #fff;
+    text-decoration: none; 
 }
 
-.menu ul {
-    position: absolute;
-    right: 50px;
-    top: 12px;
-}
-
-.menu ul li {
-    display: inline;
-    margin: 0px 10px;
-}
-
-.menu ul a li {
-    color:#fff;
-}
-
-.menu ul a li:hover {
-    color: #21fb04;
+.menu ul a:hover {
+    color:#21fb04;
     text-decoration: underline;
 }
 
-.menu ul a li i {
-    padding: 5px;
+.menu ul a li {
+    display: inline;
+    padding: 1vh;
 }
 
-.menu #icon_menu, .menu #icon_user {
+.menu ul a li i {
+    padding-right: 2vh;
+}
+
+.icon-responsive {
     display: none;
 }
 
 @media screen and (max-width: 858px) {
     .menu {
-        justify-content: center;
+        --color-text: #000;
+    }
+    
+    .icon-responsive {
+        display: block;
     }
 
-    .menu .account {
+    .menu #icons {
+        font-size: 5vh;
+    }
+
+    .menu #disappear_in_responsive {
         display:none
     }
 
-    .menu #icon_xbox p {
-        display: none;
-    }
-    
-    .menu #icon_menu {
-        display: block;
-        position: absolute;
-        left: 5%;
-        top: 5px;
-    }
-
-    .menu #icon_user {
-        display: block;
-        position: absolute;
-        right: 2.5%;
-        top: 5px;
-    }
-
-    .menu #icon_menu:hover, .menu #icon_user:hover {
-        color: #21fb04;
-    }
-
     .menu ul {
+        display: flex;
+        flex-flow: row-reverse  wrap-reverse;
         width: 100%;
+        max-height: 0%;
         position: absolute;
         left: 0;
-        top: 40px;
+        top: 100%;
         background: linear-gradient(#21fb04, #008000);
         text-align: center;
-
+        font-size: 6vh;
+        overflow: hidden;
+        transition: 0.5s;
     }
 
-    .menu ul a li {
-        font-size: 30px;
-        color: #000;
-        margin: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .menu ul a li:hover {
-        color:#fff;
+    .menu ul a {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: block;
         text-decoration: none;
     }
 
-    .menu ul li {
-        display: block;
+    .menu ul a:hover {
+        --color-text: #fff;
+        text-decoration: none; 
     }
 
-    .menu #list_menu {
-        overflow: hidden;
-        transition: 0.5s;
+    .menu ul a li {
+        color: var(--color-text);
     }
 }

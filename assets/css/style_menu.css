@@ -63,6 +63,8 @@
     }
 
     .menu ul {
+        display: flex;
+        flex-flow: row-reverse  wrap-reverse;
         width: 100%;
         max-height: 0%;
         position: absolute;
@@ -76,6 +78,7 @@
     }
 
     .menu ul a {
+        width: 100%;
         padding-top: 40px;
         padding-bottom: 40px;
         display: block;

@@ -11,13 +11,13 @@
 
 .social_media p {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 3vh;
     font-family: 'MS Gothic';
     font-weight: bold;
 }
 
 .social_media i {
-    font-size: 24px;
+    font-size: 4vh;
 }
 
 .social_media p, .social_media i {

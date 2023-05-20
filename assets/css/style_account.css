@@ -1,277 +1,211 @@
 .main {
-    width: 65%;
-    display: inline-block;
-    margin-top: 0;
-    margin-left: 5%;
-    padding: 40px 0 50px 0;
+    width: 95%;
+    padding-top: 12vh;
+    padding-bottom: 13vh;
+    margin-left: 2.5%;
 }
 
-.perfil {
+.profile {
     display: flex;
-    position: relative;
+    width: 65%;
     background: green;
-    padding: 40px 0 50px 0;
+    margin-bottom: 25px;
 }
 
-.article_icono_perfil {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
-    margin-bottom: 10px;
-}
-
-#icono_perfil {
-    width: 60%;
-    margin-left: 20%;
-    border-radius: 50%;
-}
-
-.article_datos_perfil {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.monedas {
-    display: block;
-}
-
-#icono_monedas, .cantidad_monedas {
-    display: inline;
-}
-
-.article_datos_perfil h1 {
-    font-size: 34px;
-    margin-top: 30px;
-}
-
-.article_datos_perfil p {
-    margin-top: 30px;
-}
-
-.lista_info {
-    margin-top: 30px;
-    display: inline-flex;
-}
-
-.article_datos_perfil dl {
-    margin-right: 100px;
-    font-size: 16px;
-}
-
-.article_datos_perfil dd {
-    margin-top: 10px;
-    font-size: 26px;
-}
-
-.aside {
-    width: 25%;
-    margin-left: 2%;
-    position: fixed;
+.profile .icon_user_profile {
     display: inline-block;
-    color: #fff;
+    text-align: center;
+    width: 40%;
+    margin: 1%;
+    margin-right: 0;
 }
 
-.amigos {
-    padding: 10px;
-    border-width: 0px;
-    border-bottom: 2px;
-    border-style: solid;
-    border-color: green;
-    display: block;
-}
-
-#icono_amigos, .text_amigos {
-    display: inline;
-}
-
-#icono_buscar {
-    float: right;
-}
-
-.lista_amigos {
-    padding-top: 5%;
-    display: grid;
-    grid-gap: 10px;
-}
-
-.amigo_en_linea img {
-    border: 5px solid green;
-}
-
-.amigo_desconectado img {
-    border: 5px solid black;
-}
-
-.lista_amigos img {
-    display: inline;
+.profile .icon_user_profile img {
+    width: 80%;
     border-radius: 50%;
 }
 
-.lista_amigos h2 {
-    padding: 10px;
-    position: absolute;
-    display: inline;
+.profile .info_user_profile {
+    width: 95%;
+    margin: 1%;
+    margin-left: 0;
 }
 
-.lista_amigos p {
-    padding-top: 40px;
-    padding-left: 10px;
-    position: absolute;
-    display: inline;
+.profile .info_user_profile span {
+    padding-left: 2%;
+}
+
+.profile .info_user_profile .info_list {
+    width: 95%;
+    display: inline-block;
+    margin: 1%;
+}
+
+.profile .info_user_profile dl {
+    display: inline-block;
+}
+
+.profile .info_user_profile dt {
+    font-size: 3.5vh;
+}
+
+.profile .info_user_profile dd {
+    font-weight: bold;
+}
+
+.profile .info_user_profile .coins, .profile .info_user_profile h1, .profile .info_user_profile p, .profile .info_user_profile dl {
+    margin: 2%;
+    font-size: 5vh;
 }
 
 .panel {
-    width: 100%;
-    padding-top: 40px;
+    width: 65%;
+    font-size: 4vh;
     color: #fff;
 }
 
-.panel #p_logros {
-    padding-bottom: 40px;
+.panel .achievements {
+    width: 100%;
+    margin-top: 25px;
+    background: #222;
 }
 
-.panel .logros .info_logros .info #name {
+.panel .achievements .info_achievements {
+    padding: 5px;
+}
+
+.panel .achievements .info_achievements .info_user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel .achievements .info_achievements .info_user .info_main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.panel .achievements .info_achievements .info_user .info_main .icon {
+    display: inline-block;
+    width: max-content;
+}
+
+.panel .achievements .info_achievements .info_user .info_main .icon img {
+    width: 4vw;
+    border-radius: 50%;
+    min-width: 100%;
+}
+
+.panel .achievements .info_achievements .info_user .info_main .details {
+    display: inline-block;
+    padding-left: 2%;
+}
+
+.panel .achievements .info_achievements .info_user .info_main .details #username {
     font-weight: bold;
 }
 
-.panel .logros .info_logros {
-    display: flex;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 14px;
-    align-items: center;
-    background: #222;
-
+.panel .achievements .img_achievements_info i {
+    margin-left: 1%;
 }
 
-.panel .logros #icono_perfil_logros {
-    display: inline;
-    width: 40px;
-    border-radius: 50%;
-    margin-left: 2%;
+.panel .achievements .img_achievements_info p {
+    display: inline-block;
 }
 
-.panel .logros .info_logros .info {
-    margin-left: 2%;
-}
-
-.panel .logros .info_logros .date {
-    position: absolute;
-    right: 31%;
-}
-
-.panel .logros .img_logros {
+.panel .achievements .img_achievements_info {
     background-image: url("/assets/media/logro.png");
     background-size: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
+    box-sizing: border-box;
 }
 
-.panel .logros .img_logros p {
-    display: inline;
-}
-
-.panel .logros .img_logros .img_logros_info {
-    width: 80%;
+.panel .achievements .img_achievements_info {
+    width: 100%;
     padding-top: 35%;
-    padding-bottom: 50px;
-    padding-left: 10px;
-    font-size: 1.9vw;
+    padding-bottom: 9%;
+    font-size: 5vh;
     font-weight: bold;
 }
 
-.panel .logros .info_interacciones {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 14px;
+.panel .achievements .info_interactions {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 3vh;
     align-items: center;
-    background: #222;
 }
 
-.panel .logros .info_interacciones i {
-    padding-left: 10px;
+.panel .achievements .info_interactions i {
+    padding-left: 2%;
     cursor: pointer;
 }
 
-@media only screen and (max-width:1200px) {
-    .perfil {
-        display: block;
-        position: relative;
-    }
-
-    .article_icono_perfil {  
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    .article_datos_perfil {
-        width: 450px;
-        margin-left: auto;
-        padding: 0 10px;
-        margin-bottom: 10px;
-        color: #fff;
-    }
+.aside {
+    width: 30%;
+    top: 0;
+    right: 2.5%;
+    padding-top: 12vh;
+    position: fixed;
+    color: #fff;
+    font-size: 4vh;
 }
 
-@media only screen and (max-width:870px) {
-    html {
-        width: 95%;
-    }
+.aside .icons_friends {
+    display: flex;
+    padding: 2%;
+    border-radius: 100px;
+    border-color: green;
+    border-style: solid;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    .header {
-        padding-right: 0px;
-    }
+.aside .icons_friends #icon_friend {
+    padding-left: 1%;
+}
 
-    .main {
-        width: 95%;
-    }
+.aside .icons_friends span {
+    padding-left: 5%;
+}
 
-    .article_icono_perfil {  
-        width: 50%;
-    }
+.aside .icons_friends #icon_search {
+    padding-right: 2%;
+}
 
-    #icono_perfil {
-        margin-left: 0;
-        width: 100%;
-    }
+.aside .icon_user_friend {
+    display: inline;
+    width: 20%;
+    border-radius: 50%;
+}
 
-    .article_datos_perfil {
-        width: 250px;
-    }
+.aside .online_friends, .aside .offline_friends {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-    .article_datos_perfil dd{
-        margin-top: 0px;
-    }
+.aside .online_friends .info_user_friend, .aside .offline_friends .info_user_friend {
+    padding-left: 30px;
+}
 
-    .article_datos_perfil dt{
-        margin-top: 30px;
-    }
+.aside .online_friends .info_user_friend h2, .aside .offline_friends .info_user_friend h2 {
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
 
-    .article_datos_perfil dl {
-        margin-right: 0px;
-    }
-    
-    .lista_info {
-        display: block;
-    }
+.aside .online_friends .info_user_friend p, .aside .offline_friends .info_user_friend p {
+    font-size: 1.5vw;
+    margin-top: 10px;
+}
 
-    .panel .logros .info_logros .date {
-        right: 7%;
-    }
+.aside .online_friends img {
+    border-color: green;
+    border-style: solid;
+    border-width: 0.5vw;
+}
 
-    .panel .logros .img_logros .img_logros_info {
-        font-size: 2.6vw;
-    }
-
-    .aside {
-        position: relative;
-        width: 90%;
-        margin-top: 0;
-        margin-left: 5%;
-        margin-bottom: 50px;
-    }
+.aside .info_user_friend {
+    display: inline-block;
 }
