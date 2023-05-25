@@ -114,7 +114,7 @@
 }
 
 .panel .achievements .img_achievements_info {
-    background-image: url("/assets/media/logro.png");
+    background-image: url("../assets/media/logro.png");
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
