@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xbox</title>
     <!-- LINK-MEDIA -->
-    <link href="/assets/media/icono_xbox.png" rel="shortcut icon" />
+    <link href="../../assets/media/icono_xbox.png" rel="shortcut icon" />
     <!-- LINK-CSS -->
-    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/css/style_menu.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/css/style_main.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/style.css" rel="stylesheet" type="text/css" />
     <link
-      href="/assets/css/style_support_modal.css"
+      href="../../assets/css/style_menu.css"
       rel="stylesheet"
       type="text/css"
     />
     <link
-      href="/assets/css/style_footer.css"
+      href="../../assets/css/style_main.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../../assets/css/style_support_modal.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../../assets/css/style_footer.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -28,8 +36,8 @@
       referrerpolicy="no-referrer"
     />
     <!-- LINK-JS -->
-    <script src="assets/js/script_menu.js"></script>
-    <script src="assets/js/script_support_modal.js"></script>
+    <script src="../../assets/js/script_menu.js"></script>
+    <script src="../../assets/js/script_support_modal.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -57,13 +65,13 @@
             ><li><i class="fa-solid fa-gamepad"></i>Game Pass</li></a
           >
           <a href="#"
-            ><li><i class="fa-solid fa-store"></i>Tienda</li></a
+            ><li><i class="fa-solid fa-store"></i>Shop</li></a
           >
           <a href="#"
-            ><li><i class="fa-solid fa-cart-shopping"></i>Carrito</li></a
+            ><li><i class="fa-solid fa-cart-shopping"></i>Cart</li></a
           >
-          <a href="pages/es/account.html" id="disappear_in_responsive"
-            ><li>Cuenta</li></a
+          <a href="../en/account.html" id="disappear_in_responsive"
+            ><li>Account</li></a
           >
         </ul>
         <!-- ICON TO RESPONSIVE -->
@@ -78,53 +86,56 @@
     <main class="main">
       <article class="article-1">
         <h2>XBOX ONE <br />Series X/S</h2>
-        <h3>Mando Inalámbrico para Xbox One</h3>
-        <p>(Compatible/Generico) - Material Educativo</p>
-        <h4>$299.000 COP</h4>
-        <button type="button">COMPRAR AHORA</button>
+        <h3>Wireless Controller for Xbox One</h3>
+        <p>(Compatible/Generic) - Educational Material</p>
+        <h4>$69.99 USD</h4>
+        <button type="button">BUY NOW</button>
       </article>
       <article class="article-2">
         <img
-          src="assets/media/xbox_one_control_blanco.png"
+          src="../../assets/media/xbox_one_control_blanco.png"
           class="img_control"
           alt="imagen control xbox one blanco"
         />
         <section class="caja_de_color"></section>
         <section class="boton_agregar">
-          <img src="assets/media/agregar.png" alt="boton agregar al carrito" />
-          <p><small>Agregar al Carrito</small></p>
+          <img
+            src="../../assets/media/agregar.png"
+            alt="boton agregar al carrito"
+          />
+          <p><small>Add to Cart</small></p>
         </section>
       </article>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
       <div class="language">
-        <a href="pages/en/index.html"
-          ><i class="fa-solid fa-globe"><span>ENGLISH</span></i></a
+        <a href="../../index.html"
+          ><i class="fa-solid fa-globe"><span>ESPAÑOL</span></i></a
         >
       </div>
       <div class="social_media">
-        <p>SIGUENOS</p>
-        <a href="https://www.facebook.com/XboxColombia" target="_blank"
+        <p>FOLLOW US</p>
+        <a href="https://www.facebook.com/xbox/" target="_blank"
           ><i class="fa-brands fa-facebook-f" alt="facebook xbox"></i
         ></a>
-        <a href="https://twitter.com/XboxColombia" target="_blank"
+        <a href="https://twitter.com/Xbox" target="_blank"
           ><i class="fa-brands fa-twitter" alt="twitter xbox"></i
         ></a>
-        <a href="https://www.instagram.com/xboxcolombia" target="_blank"
+        <a href="https://www.instagram.com/xbox/" target="_blank"
           ><i class="fa-brands fa-instagram" alt="instagram xbox"></i
         ></a>
       </div>
       <div class="support">
         <button id="btn_open_support_modal">
-          <i class="fa-solid fa-headset"><span>SOPORTE</span></i>
+          <i class="fa-solid fa-headset"><span>SUPPORT</span></i>
         </button>
       </div>
 
       <dialog id="support_modal" class="support_modal">
         <form id="form_support_modal">
           <i id="btn_close_support_modal" class="fa-solid fa-x"></i>
-          <h1>SOPORTE</h1>
+          <h1>SUPPORT</h1>
 
           <div class="support_form">
             <div class="icons_support">
@@ -139,7 +150,7 @@
             <div class="inputs_support">
               <input
                 id="username"
-                placeholder="Nombre"
+                placeholder="Name"
                 type="text"
                 name="username"
                 maxlength="40"
@@ -154,21 +165,21 @@
               />
 
               <select id="country" name="country">
-                <option value="NONE" disabled selected>País</option>
+                <option value="NONE" disabled selected>Country</option>
                 <option value="colombia">Colombia</option>
                 <option value="usa">United States</option>
               </select>
 
               <input
                 id="phone"
-                placeholder="Celular"
+                placeholder="Number"
                 type="number"
                 name="phone"
               />
 
               <input
                 id="affair"
-                placeholder="Asunto"
+                placeholder="Affair"
                 type="text"
                 name="affair"
                 maxlength="40"
@@ -176,7 +187,7 @@
 
               <textarea
                 id="message"
-                placeholder="Mensaje"
+                placeholder="Message"
                 type="text"
                 name="message"
                 maxlength="400"
@@ -184,14 +195,14 @@
             </div>
           </div>
           <div id="btn_send_support_modal">
-            <p>ENVIAR</p>
+            <p>SEND</p>
             <i class="fa-solid fa-circle-right"></i>
           </div>
         </form>
       </dialog>
       <dialog id="support_finish_modal" class="support_finish_modal">
         <i class="fa-solid fa-circle-check"></i>
-        <h2>Se envió tu solicitud.</h2>
+        <h2>Your application has been sent.</h2>
       </dialog>
     </footer>
   </body>

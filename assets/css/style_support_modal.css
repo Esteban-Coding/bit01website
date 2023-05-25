@@ -1,0 +1,122 @@
+.support_modal {
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    border: 1px solid #888;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60%;
+}
+
+.support_modal::backdrop {
+    position: fixed;
+    background-color: rgba(0, 0, 0,.55);
+}
+
+.support_modal #btn_close_support_modal {
+    float: right;
+    font-size: 5vh;
+}
+
+.support_modal .support_form {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.support_modal .icons_support  {
+    display: inline-block;
+    margin: 2px;
+    margin-top: 5px;
+}
+
+.support_modal .icons_support i {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 19px;
+    margin-bottom: 19px;
+}
+
+.support_modal .inputs_support {
+    width: 90%;
+    display: inline-block;
+    margin: 2px;
+}
+
+.support_modal .inputs_support input, .support_modal .inputs_support select, .support_modal .inputs_support textarea {
+    display: inline;
+    width: 95%;
+    height: 50px;
+    margin-bottom: 10px;
+    transform: translate(1px, 0);
+    border: 0;
+    border-bottom: 3px solid #dfdfdf;
+    font-size: 1em;
+    text-align: top;
+    resize: none;
+}
+
+.support_modal .inputs_support #message {
+    height: 11%;
+}
+
+.support_modal .inputs_support #message::webkit-scrollbar {
+    width: 0px;
+}
+
+.support_modal .inputs_support #phone::-webkit-outer-spin-button, .support_modal .inputs_support #phone::-webkit-inner-spin-button  {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.support_modal #btn_close_support_modal {
+    cursor: pointer;
+}
+
+.support_modal #btn_close_support_modal:hover {
+    color: #21fb04;
+    transition: 0.2s;
+}
+
+.support_modal #btn_send_support_modal {
+    cursor: pointer;
+}
+
+.support_modal #btn_send_support_modal p {
+    display: inline;
+}
+
+.support_modal #btn_send_support_modal:hover {
+    color: #21fb04;
+    transition: 0.2s;
+}
+
+.support_finish_modal {
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    border: 1px solid #888;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60%;
+}
+
+.support_finish_modal i {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12vh;
+}
+
+.support_finish_modal h2 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vh;
+}

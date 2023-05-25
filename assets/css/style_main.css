@@ -49,7 +49,6 @@
 }
 
 .main .article-1 button:hover {
-    display: flex;
     background: #21fb04;
     transition: 0.3s;
 }

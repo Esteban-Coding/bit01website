@@ -101,7 +101,7 @@
     padding-left: 2%;
 }
 
-.panel .achievements .info_achievements .info_user .info_main .details #username {
+.panel .achievements .info_achievements .info_user .info_main .details #username_info {
     font-weight: bold;
 }
 
@@ -208,4 +208,49 @@
 
 .aside .info_user_friend {
     display: inline-block;
+}
+
+@media only screen and (max-width:858px) {
+    .profile {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .profile .icon_user_profile {
+        width: 100%;
+    }
+
+    .profile .icon_user_profile img {
+        width: 50%;
+    }
+
+    .profile .info_user_profile {
+        width: 100%;
+        margin: 0%;
+        text-align: center;
+    }
+
+    .panel {
+        width: 100%;
+    }
+
+    .aside {
+        width: 95%;
+        display: block;
+        position: inherit;
+        padding-top: 0vh;
+        margin-left: 2.5%;
+    }
+
+    .panel .achievements .info_achievements .info_user .info_main .icon img {
+        width: 50px;
+    }
+
+    .aside .online_friends .info_user_friend h2, .aside .offline_friends .info_user_friend h2 {
+        font-size: 5vw;
+    }
+    
+    .aside .online_friends .info_user_friend p, .aside .offline_friends .info_user_friend p {
+        font-size: 3.5vw;
+    }
 }
