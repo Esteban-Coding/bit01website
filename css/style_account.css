@@ -1,7 +1,7 @@
 .main {
     width: 95%;
     padding-top: 12vh;
-    padding-bottom: 13vh;
+    padding-bottom: 10%;
     margin-left: 2.5%;
 }
 
@@ -72,6 +72,7 @@
 
 .panel .achievements .info_achievements {
     padding: 5px;
+    font-size: 2vw;
 }
 
 .panel .achievements .info_achievements .info_user {
@@ -107,10 +108,12 @@
 
 .panel .achievements .img_achievements_info i {
     margin-left: 1%;
+    font-size: 2vw;
 }
 
 .panel .achievements .img_achievements_info p {
     display: inline-block;
+    font-size: 2vw;
 }
 
 .panel .achievements .img_achievements_info {
@@ -159,6 +162,7 @@
     border-style: solid;
     align-items: center;
     justify-content: space-between;
+    font-size: 2vw;
 }
 
 .aside .icons_friends #icon_friend {
@@ -230,20 +234,33 @@
         text-align: center;
     }
 
+    .profile .info_user_profile .info_list {
+        display: flex;
+        flex-direction: column;
+    }
+
     .panel {
         width: 100%;
+    }
+
+    .panel .achievements .info_achievements .info_user .info_main, .panel .achievements .info_achievements .info_user .info_date, .panel .achievements .img_achievements .img_achievements_info {
+        font-size: 4vw;
+    }
+
+    .panel .achievements .info_achievements .info_user .info_main .icon img {
+        width: 50px;
     }
 
     .aside {
         width: 95%;
         display: block;
         position: inherit;
-        padding-top: 0vh;
+        padding-top: 0;
         margin-left: 2.5%;
     }
 
-    .panel .achievements .info_achievements .info_user .info_main .icon img {
-        width: 50px;
+    .aside .icons_friends {
+        font-size: 5vw;
     }
 
     .aside .online_friends .info_user_friend h2, .aside .offline_friends .info_user_friend h2 {
